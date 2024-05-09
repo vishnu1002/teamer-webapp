@@ -33,19 +33,20 @@ To set up this project locally, follow these steps:
 ```
 git clone https://github.com/vishnu1002/teamer-webapp.git
 ```
-2. Install MongoDB and mongoshell. Follow the link to install [mongodb-help](https://github.com/vishnu1002/cmd-help/blob/main/mongodb--help.md)
-3. Navigate to the root of the folder
-4. Initialize npm
+2. Install Nodejs [nodejs.org](https://nodejs.org/)
+3. Install MongoDB and mongoshell. Follow the link to install [mongodb-help.md](https://github.com/vishnu1002/cmd-help/blob/main/mongodb--help.md)
+4. Navigate to the root of the folder
+5. Initialize npm
 ```
 npm init -y
 npm i express express-session mongodb mongoose
 ```
-5. Run the Server in localhost:3000
+6. Run the Server in localhost:3000
 ```
 cd src
 node server.js
 ```
-6. Access the Application
+7. Access the Application
 ```
 http://localhost:3000
 ```
