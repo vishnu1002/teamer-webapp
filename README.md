@@ -24,7 +24,11 @@ tasks by milestones, and track progress over time. Authentication is used by pre
 consumer. Designed to simplify project management, the app provides users with an easy way to
 organize and track projects, ultimately increasing productivity and project management.
 
+- [Local Setup](#local-setup)
+- [Docker Setup](#docker-setup)
+
 ## Setup Instructions
+### Local Setup
 
 To set up this project locally, follow these steps:
 
@@ -49,6 +53,34 @@ node server.js
 7. Access the Application
 ```
 http://localhost:3000
+```
+
+## Docker Setup
+
+To containerize this project using Docker, follow these steps:
+
+### MongoDB Container
+
+1. Pull and run the MongoDB container:
+```
+docker run --name mongo -d --rm mongo
+```
+2. Alternatively, to create a MongoDB container with a specific network and volume:
+```
+docker network create teamer-net
+docker volume create teamer-vol
+docker run --name mongo -d --rm --network teamer-net -v teamer-vol:/data/db mongo
+```
+
+### Node.js Container
+
+1. Build the Docker image for the Node.js application:
+```
+docker build -t teamer-frontend .
+```
+2. Run the Node.js container:
+```
+docker run --rm -d --network teamer-net -p 3000:3000 --name teamer-frontend -v C:\%cd%\teamer-docker\src:/app teamer-frontend
 ```
 
 ## Technologies used
