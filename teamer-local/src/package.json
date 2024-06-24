@@ -1,0 +1,22 @@
+{
+  "name": "teamer-webapp",
+  "version": "1.0.0",
+  "author": "vishnu1002",
+  "description": "A simple and efficient web-based task management application for organizing your tasks with ease",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishnu1002/teamer-webapp"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.8.2"
+  }
+}
