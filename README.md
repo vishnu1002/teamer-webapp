@@ -24,7 +24,9 @@ tasks by milestones, and track progress over time. Authentication is used by pre
 consumer. Designed to simplify project management, the app provides users with an easy way to
 organize and track projects, ultimately increasing productivity and project management.
 
-
+## Download Files
+- [teamer-local](https://github.com/vishnu1002/teamer-webapp/releases/tag/v1.0.0)
+- [teamer-docker](https://github.com/vishnu1002/teamer-webapp/releases/tag/v1.0.1)
 
 ## Setup Instructions
 
