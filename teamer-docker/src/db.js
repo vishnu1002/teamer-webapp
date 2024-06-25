@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const User = require('./userModel');
 
 mongoose.connect('mongodb://mongo:27017/teamer', {
-// mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@mongo:27017/teamer?authSource=admin`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
