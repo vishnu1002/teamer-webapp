@@ -1,0 +1,23 @@
+version: '3.8'  
+
+services:
+  mongodb:
+    image: 'mongo'
+    container_name: 'mongo'
+    volumes:
+      - 'teamer-vol:/data/db'
+
+  frontend:
+    build: .    #Dockerfile path for building image
+    container_name: 'teamer-frontend'
+    ports:
+      - '3000:3000'
+    volumes:
+      - '.:/app'
+    depends_on: #first service starts then the second
+      - mongodb
+
+#only named volumes should be mentioned here
+#no need to add anon or bind mounts
+volumes:
+  teamer-vol:
