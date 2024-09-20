@@ -34,16 +34,15 @@ organize and track projects, ultimately increasing productivity and project mana
 - [Docker Setup](https://github.com/vishnu1002/teamer-webapp/blob/main/teamer-docker/README.md)
 
 ## Technologies used
-1. HTML (Hypertext Markup Language)
-2. CSS (Cascading Style Sheets)
-3. JavaScript
-4. Bootstrap 5
-5. Node.js
-6. Express.js
-7. Express-session
-8. MongoDB
-9. Mongoose
-10. Docker
+1. HTML/CSS
+2. JavaScript
+3. Bootstrap 5
+4. Node.js
+5. Express.js
+6. Express-session
+7. MongoDB
+8. Mongoose
+9. Docker
 
 ## System Architecture
 
